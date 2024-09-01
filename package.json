@@ -1,0 +1,18 @@
+{
+  "name": "short_url",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Alok Kumar",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3",
+    "nanoid": "^5.0.7",
+    "shortid": "^2.2.16"
+  }
+}

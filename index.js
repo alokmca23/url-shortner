@@ -12,6 +12,7 @@ app.set("view engine","ejs");
 app.set("views",path.resolve("./views"));
 
 // connectMongoDb("mongodb://localhost:27017/short-url")
+console.log("key is ", process.env.DATABASE_URL);
  connectMongoDb(process.env.DATABASE_URL)
 .then(() => console.log("MongoDb connected!"));
 //Middleware

@@ -30,6 +30,7 @@ app.use("/url", restrictToLoggedInUserOnly, urlRoutes);
 app.use("/user",userRoutes);
 app.use("/", checkAuth, staticRoute);
 
+
 app.get("/url/:shortID", async (req,res) =>{
     const shortID = req.params.shortID;
     const entry = await URL.findOneAndUpdate(
